@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jsHomeWork01</title>
+</head>
+<body>
+  <script>
+    function pow() {
+    var a;
+    a = prompt ('Введіть число:');
+    var n;
+    n = prompt ('Введіть степінь:');
+    var x = 1;
+    var i = 0;
+    if (n >= 0) {
+      while (i < n) {
+        x = x * a;
+        i++;
+      }
+    } else {
+      while (i > n) {
+        x = x * a;
+        i--;
+      }
+      x = 1 / x;
+    }
+    console.log ('Число', a, 'в', n, '-му степені дорівнюе:', x);
+    }
+    pow();
+  </script>
+</body>
+</html>

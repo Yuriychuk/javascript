@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jsHomeWork02</title>
+</head>
+<body>
+  <script>
+  var nameArray = [];
+  function inputName() {
+  var i = 0;
+    while (i < 5) {
+     i++;
+     var name = prompt ('Введіть ім"я, для кого доступ відкритий:');
+     nameArray.push(name);
+   }
+  }
+
+  function checkName() {
+  var myName = prompt ('Введіть своє ім"я:');
+  var message = false;
+  var check = 0;
+  while (check < nameArray.length) {
+    if (nameArray[check] == myName) message = true;
+      check++;
+    }
+  if (message == true) {
+    alert('Шановний ' + myName + ' , ласкаво просимо на нашу сторінку');
+  } else {
+    alert('Нажаль у вас немає доступу!');
+  }
+  }
+  
+  inputName();
+  checkName ();
+  </script>
+</body>
+</html>
